@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <p>Keep track of your expenses and manage your budget effectively.</p>
+    </header>
+    <div class="container">
+        <form id="expense-form">
+            <div class="form-group">
+                <label for="expense-description">Expense Description</label>
+                <input type="text" id="expense-description" placeholder="Enter expense description" required>
+            </div>
+            <div class="form-group">
+                <label for="expense-amount">Amount</label>
+                <input type="number" id="expense-amount" placeholder="Enter amount" required>
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+        <ul id="expense-list"></ul>
+        <h2>Total: $<span id="total-amount">0.00</span></h2>
+    </div>
+    <footer>
+        <p>&copy; 2023 Expense Tracker. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
